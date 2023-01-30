@@ -40,4 +40,10 @@ Have you ever needed the ability to quickly make contacts available to a group o
 
 -Search of contacts sorted by pod
 
+# Server
+
+ip: 3.138.91.243
+ssh -i keyfilepath ubuntu@3.138.91.243
+
+REMINDER: release the elastic ip address before terminating instance for class
 
