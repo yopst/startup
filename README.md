@@ -47,7 +47,7 @@ ssh -i keyfilepath ubuntu@3.138.91.243
 
 REMINDER: release the elastic ip address before terminating instance for class
 
-#HTML
+# HTML
 
 | element   | meaning                                                                |
 | --------- | ---------------------------------------------------------------------- |
@@ -85,7 +85,7 @@ REMINDER: release the elastic ip address before terminating instance for class
 | `svg`     | Scalable vector graphic content                                        |
 | `iframe`  | Inline frame of another HTML page                                      |
 
-##Structure Example Reference:
+## Structure Example Reference:
 ```html
 <body>
   <p>Body</p>
