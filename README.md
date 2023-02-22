@@ -133,3 +133,8 @@ REMINDER: release the elastic ip address before terminating instance for class
 </body>
 ```
 ![HTML structure](htmlStructure.jpg)
+# CSS
+## for reference: 
+css flexbox: https://codepen.io/yopst/pen/eYLmWqX
+css animation: https://codepen.io/yopst/pen/NWLKQBb
+css bootstrap: https://codepen.io/yopst/pen/jOvqVrg
