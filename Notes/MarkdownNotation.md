@@ -58,3 +58,31 @@ In a .md file in another repository	/../../../../github/docs/blob/main/assets/im
 In issues, pull requests and comments of another repository	../../../github/docs/blob/main/assets/images/electrocat.png?raw=true
 
 ## List
+You can make an unordered list by preceding one or more lines of text with -, *, or +.
+
+- George Washington
+* John Adams
++ Thomas Jefferson
+Screenshot of rendered GitHub Markdown showing a bulleted list of the names of the first three American presidents.
+
+To order your list, precede each line with a number.
+
+1. James Madison
+2. James Monroe
+3. John Quincy Adams
+Screenshot of rendered GitHub Markdown showing a numbered list of the names of the fourth, fifth, and sixth American presidents.
+
+### Nested Lists
+u can create a nested list by indenting one or more list items below another item.
+
+To create a nested list using the web editor on GitHub or a text editor that uses a monospaced font, like Visual Studio Code, you can align your list visually. Type space characters in front of your nested list item until the list marker character (- or *) lies directly below the first character of the text in the item above it.
+
+1. First list item
+   - First nested list item
+     - Second nested list item
+Note
+
+In the web-based editor, you can indent or dedent one or more lines of text by first highlighting the desired lines and then using Tab or Shift+Tab respectively.
+
+## Task List
+To create a task list, preface list items with a hyphen and space followed by [ ]. To mark a task as complete, use [x].
