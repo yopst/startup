@@ -57,7 +57,7 @@ The `footer` has a content division with a single span.
 
 If we rendered this HTML, and added just a bit of styling, so we can see how they related to each other, we would see the following.
 
-![HTML structure](htmlStructure.jpg)
+![HTML structure](htmlStructure (2).jpg)
 
 Properly representing the page structure using the elements is important not only so it makes logical sense to a programmer, but also so that automated tools like search indexing crawlers and accessibility screen readers can correctly interpret the document.
 
