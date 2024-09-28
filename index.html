@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Tell browsers not to scale the viewport automatically -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Stream</title>
+  </head>
+  <body>
+    <!-- Use header, main, and footer elements to give semantic structure -->
+    <header>
+      <h1>Dream Stream</h1>
+
+      <!-- Navigation elements -->
+      <nav>
+        <!-- Menu is a semantic alternative to <ul> that represents an interaction -->
+        <menu>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/stream.html">Stream</a></li>
+          <li><a href="pages/profile.html">Profile</a></li>
+          <li><a href="pages/about.html">About</a></li>
+        </menu>
+      </nav>
+
+      <!-- Since we don't have the ability to style we use old style HTML to give some visual formatting -->
+      <hr />
+    </header>
+
+    <main>
+        <h2>Followed</h2>
+        <form method="get" action="pages/stream.html">
+            <button type="submit">
+                <h3>JessicaThaBoot</h3>
+                <p>...and they were roommates!!!...</p>
+            </button>
+        </form>
+        <h2>Lucid Streams</h2>
+        <form method="get" action="pages/stream.html">
+            <button type="submit">
+                <h3>Caseoh</h3>
+                <p>...I was hungry but I couldn't fi...</p>
+            </button>
+        </form>
+    </main>
+
+    <aside>
+        <h2>Host</h2>
+        <p>Sign in to Host your own stream.</p>
+        <form method="get" action="pages/profile.html">
+            <div>
+              <span>@</span>
+              <input type="text" placeholder="your@email.com" />
+            </div>
+            <div>
+              <span>🔒</span>
+              <input type="password" placeholder="password" />
+            </div>
+            <button type="submit">Login</button>
+            <button type="submit">Create</button>
+        </form>
+    </aside>
+
+    <footer>
+      <hr />
+      <span class="text-reset">Author Name(s)</span>
+      <br />
+      <a href="https://github.com/yopst/startup/tree/main">Luc Cole</a>
+    </footer>
+  </body>
+</html>

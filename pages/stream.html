@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stream</title>
+  </head>
+  <body>
+    <header>
+      <h1>Dream Stream</h1>
+
+      <nav>
+        <menu>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="stream.html">Stream</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="about.html">About</a></li>
+        </menu>
+      </nav>
+
+      <hr />
+    </header>
+
+
+    <main>
+
+        
+        <label for="textarea">TextArea: </label>
+        <textarea id="textarea" name="varTextarea" placeholder="... thats when the room started to melt! the walls dripped and the floors were squishing and making like a crazy shwooshing noise that was almost..."></textarea>
+
+    </main>
+
+    <aside class="Comments">
+        <h3>Comments</h3>
+        <button> Hide </button>
+
+        <ul class="notification">
+
+            <li><input type="text" placeholder="What do you think"></li>
+            <li class="player-name">very thought provoking</li>
+            <li class="player-name">interesting way to put that...</li>
+            <li class="player-name">Eww why would you say that!</li>
+        </ul>
+    </aside>
+    <aside class="Settings">
+        <label for="range">Viewer Veil: </label>
+        <input type="range" name="varRange" id="range" min="3" max="16" step="1" value="0" />
+        <output id="rangeOutput" for="range">0</output>
+        <!-- Range requires some JavaScript in order to make it work. Ignore this for now. -->
+        <script>
+          const range = document.querySelector('#range');
+          const rangeOutput = document.querySelector('#rangeOutput');
+          range.addEventListener('input', function() {
+            rangeOutput.textContent = range.value;
+          });
+        </script>
+        <label for="range">Max Viewers: </label>
+        <input type="range" name="varRange" id="range" min="0" max="100" step="1" value="0" />
+        <output id="rangeOutput" for="range">0</output>
+        <!-- Range requires some JavaScript in order to make it work. Ignore this for now. -->
+        <script>
+          const range2 = document.querySelector('#range');
+          const rangeOutput2 = document.querySelector('#rangeOutput');
+          range.addEventListener('input', function() {
+            rangeOutput.textContent = range.value;
+          });
+        </script>
+        <button> Make Private </button>
+        <form method="get" action="profile.html">
+            <button type="submit">End Stream</button>
+        </form>
+    </aside>
+
+
+
+    <footer>
+      <hr />
+      <span class="text-reset">Author Name(s)</span>
+      <br />
+      <a href="https://github.com/yopst/startup/tree/main">Luc Cole</a>
+    </footer>
+  </body>
+</html>
