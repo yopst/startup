@@ -1,0 +1,38 @@
+
+.main-content {
+height: calc(100vh - 200px); /* Adjust as needed for the header and footer */
+margin-top: 2rem;
+}
+textarea {
+width: 100%;
+height: 100%;
+resize: none;
+}
+.control-panel {
+background-color: #f8f9fa;
+padding: 1rem;
+border-radius: 0.25rem;
+height: 100%;
+}
+.comment-section {
+background-color: #f8f9fa;
+padding: 1rem;
+border-radius: 0.25rem;
+margin-top: 2rem;
+}
+.comment {
+list-style-type: none;
+padding: 0;
+margin-top: 1rem;
+}
+.notification li {
+margin-bottom: 0.5rem;
+}
+footer {
+margin-top: 2rem;
+}
+@media (max-width: 768px) {
+    .control-panel {
+      margin-top: 1rem;
+    }
+}
