@@ -5,101 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .profile-header {
+        margin-bottom: 2rem;
+      }
+      .profile-pic img {
+        border-radius: 50%;
+      }
+      .profile-info {
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 0.25rem;
+      }
+      .profile-content {
+        margin-top: 2rem;
+      }
+      .stream-archive {
+        margin-top: 2rem;
+      }
+      .stream-card {
+        margin-bottom: 1rem;
+      }
+      .table-schedule {
+        margin-bottom: 2rem;
+      }
+    </style>
   </head>
   <body>
     <header>
-
       <!-- Navigation elements -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="profile.html">Profile</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="stream.html">Stream</a>
-                  </li>
-                  <li class="nav-item active">
-                      <a class="nav-link" href="profile.html">Profile</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="about.html">About</a>
-                  </li>
-              </ul>
-          </div>
+        <a class="navbar-brand" href="profile.html">Profile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stream.html">Stream</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-  </header>
-    <!-- Username -->
-     <h1> Username_example01</h1>
-    <!-- Pic -->
-    <div id="picture" class="profile-pic"><img width="100px" src="https://images.hitpaw.com/topics/3d/profile-photo-1.jpg" alt="profile pic" /></div>
-    
-    <!-- Bio -->
-     <h2>Bio</h2>
-     <p>
-        🌟 <strong>Welcome to my corner of the internet!</strong> I’m an avid traveler and lifelong learner, 
-        passionate about sharing my adventures and experiences with the world. Whether I'm 
-        exploring hidden gems in my hometown or wandering through distant lands, I love to 
-        capture moments that tell a story. Through my posts, I hope to inspire others to 
-        embrace curiosity and step outside their comfort zones. Join me as I discover new 
-        cultures, try delicious cuisines, and connect with amazing people along the way!
-     </p>
-     <p>
-        ✨ <strong>In my daily life</strong>, I’m a tech enthusiast and aspiring software developer, constantly 
-        honing my skills in coding and design. When I'm not busy with my keyboard, you can find 
-        me hiking, reading, or experimenting with new recipes in the kitchen. I believe in the 
-        power of community and love engaging with others who share my interests. Feel free to 
-        reach out, share your own stories, or just say hi! Let’s connect and create a vibrant 
-        space for sharing inspiration and positivity together!
-     </p>
+    </header>
 
-    <!-- Upcoming Streams -->
-    <h2>Schedule</h2>
-    <table>
-        <tr>
-            <th>Date</th>
-            <th>Time</th>
-        </tr>
-        <tr>
-            <td>9/11/2001</td>
-            <td>3:33am</td>
-        </tr>
-        <tr>
-            <td>12/25/0000</td>
-            <td>12:00am</td>
-        </tr>
-        <tr>
-            <td>2/22/2002</td>
-            <td>4:20pm</td>
-        </tr>
-    </table>
+    <main class="container profile-content">
+      <div class="profile-header text-center">
+        <h1>Username_example01</h1>
+        <div id="picture" class="profile-pic mb-3">
+          <img width="100px" src="https://images.hitpaw.com/topics/3d/profile-photo-1.jpg" alt="profile pic" />
+        </div>
+      </div>
+      
+      <div class="row">
+        <!-- Profile Info and Bio -->
+        <div class="col-md-8">
+          <div class="profile-info">
+            <h2>Bio</h2>
+            <p>
+              🌟 <strong>Welcome to my corner of the internet!</strong> I’m an avid traveler and lifelong learner, passionate about sharing my adventures and experiences with the world.
+            </p>
+            <p>
+              ✨ <strong>In my daily life</strong>, I’m a tech enthusiast and aspiring software developer, constantly honing my skills in coding and design.
+            </p>
+          </div>
+        </div>
 
-    <!-- Saved Streams -->
-    <h2>Past Streams</h2>
-    <div class="archive">
-        <form method="get" action="stream.html">
-            <button type="submit">
-                <h3>The day I got accepted to Med School</h3>
-                <p>...and they were roommates!!!...</p>
-            </button>
-        </form>
-        <form method="get" action="stream.html">
-            <button type="submit">
-                <h3>The man with rulers for finger</h3>
-                <p>...he kept asking my for measurements but I didn't...</p>
-            </button>
-        </form>
-        <form method="get" action="stream.html"></form>
-            <button type="submit">
-                <h3>I peed the bed</h3>
-                <p>...when I walk out of my room and saw a giant urinal...</p>
-            </button>
-        </form>
-    </div>
+        <!-- Schedule and Upcoming Streams -->
+        <div class="col-md-4">
+          <h2>Schedule</h2>
+          <table class="table table-striped table-schedule">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>9/11/2001</td>
+                <td>3:33am</td>
+              </tr>
+              <tr>
+                <td>12/25/0000</td>
+                <td>12:00am</td>
+              </tr>
+              <tr>
+                <td>2/22/2002</td>
+                <td>4:20pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Saved Streams Section -->
+      <div class="stream-archive">
+        <h2>Past Streams</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card stream-card">
+              <form method="get" action="stream.html">
+                <button type="submit" class="btn btn-light btn-block">
+                  <h3>The day I got accepted to Med School</h3>
+                  <p>...and they were roommates!!!...</p>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card stream-card">
+              <form method="get" action="stream.html">
+                <button type="submit" class="btn btn-light btn-block">
+                  <h3>The man with rulers for fingers</h3>
+                  <p>...he kept asking me for measurements but I didn't...</p>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card stream-card">
+              <form method="get" action="stream.html">
+                <button type="submit" class="btn btn-light btn-block">
+                  <h3>I peed the bed</h3>
+                  <p>...when I walked out of my room and saw a giant urinal...</p>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer class="d-flex justify-content-end align-items-center bg-light p-3">
       <div class="text-end">
