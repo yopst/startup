@@ -5,12 +5,12 @@
     <!-- Tell browsers not to scale the viewport automatically -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dream Stream</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/index.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Use header, main, and footer elements to give semantic structure -->
     <header>
-
         <!-- Navigation elements -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="index.html">Dream Stream</a>
@@ -36,46 +36,104 @@
         </nav>
     </header>
 
-    <main>
-        <h2>Followed</h2>
-        <form method="get" action="pages/stream.html">
-            <button type="submit">
-                <h3>JessicaThaBoot</h3>
-                <p>...and they were roommates!!!...</p>
-            </button>
-        </form>
-        <h2>Lucid Streams</h2>
-        <form method="get" action="pages/stream.html">
-            <button type="submit">
-                <h3>Caseoh</h3>
-                <p>...I was hungry but I couldn't fi...</p>
-            </button>
-        </form>
+    <main class="streams p-3">
+        <div class="btn-group mb-3" role="group" aria-label="Stream Selector">
+            <button type="button" class="btn btn-primary" onclick="showFollowed()">Followed</button>
+            <button type="button" class="btn btn-secondary" onclick="showLucid()">Lucid Streams</button>
+        </div>
+
+        <div id="followed-section" class="stream-section">
+            <h2>Followed</h2>
+            <div class="card">
+                <form method="get" action="pages/stream.html">
+                    <button type="submit" class="btn btn-light">
+                        <h3>JessicaThaBoot</h3>
+                        <p>...and they were roommates!!!...</p>
+                    </button>
+                </form>
+            </div>
+            <div class="card">
+                <form method="get" action="pages/stream.html">
+                    <button type="submit" class="btn btn-light">
+                        <h3>MorttyMan3</h3>
+                        <p>...i dont even want to adventure...</p>
+                    </button>
+                </form>
+            </div>
+            <div class="card">
+                <form method="get" action="pages/stream.html">
+                    <button type="submit" class="btn btn-light">
+                        <h3>HandsomeDavid</h3>
+                        <p>...she said she wants someone...</p>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div id="lucid-section" class="stream-section d-none">
+            <h2>Lucid</h2>
+            <div class="card">
+                <form method="get" action="pages/stream.html">
+                    <button type="submit" class="btn btn-light">
+                        <h3>Caseoh</h3>
+                        <p>...I was hungry but I couldn't fi...</p>
+                    </button>
+                </form>
+            </div>
+            <div class="card">
+                <form method="get" action="pages/stream.html">
+                    <button type="submit" class="btn btn-light">
+                        <h3>NickFa</h3>
+                        <p>...the nation of Isreal a...</p>
+                    </button>
+                </form>
+            </div>
+            <div class="card">
+                <form method="get" action="pages/stream.html">
+                    <button type="submit" class="btn btn-light">
+                        <h3>Sketch</h3>
+                        <p>...whats up brother...</p>
+                    </button>
+                </form>
+            </div>
+        </div>
     </main>
 
-    <aside>
+    <aside class="p-3">
         <h2>Host</h2>
         <p>Sign in to Host your own stream.</p>
         <form method="get" action="pages/profile.html">
-            <div>
+            <div class="mb-2">
               <span>@</span>
-              <input type="text" placeholder="your@email.com" />
+              <input type="text" placeholder="your@email.com" class="form-control" />
             </div>
-            <div>
+            <div class="mb-2">
               <span>🔒</span>
-              <input type="password" placeholder="password" />
+              <input type="password" placeholder="password" class="form-control" />
             </div>
-            <button type="submit">Login</button>
-            <button type="submit">Create Profile</button>
+            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-secondary">Create Profile</button>
         </form>
     </aside>
 
-    <footer class="fixed-bottom d-flex justify-content-end align-items-center bg-light p-3">
+    <footer class="d-flex justify-content-end align-items-center bg-light p-3">
         <div class="text-end">
           <span class="text-muted">Author Name(s)</span>
           <br />
           <a href="https://github.com/yopst/startup/tree/main" class="text-reset">Luc Cole</a>
         </div>
     </footer>
+
+    <script>
+        function showFollowed() {
+            document.getElementById('followed-section').classList.remove('d-none');
+            document.getElementById('lucid-section').classList.add('d-none');
+        }
+
+        function showLucid() {
+            document.getElementById('lucid-section').classList.remove('d-none');
+            document.getElementById('followed-section').classList.add('d-none');
+        }
+    </script>
   </body>
 </html>
