@@ -5,61 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
   </head>
   <body>
     <header>
-
       <!-- Navigation elements -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="about.html">About</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="stream.html">Stream</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="profile.html">Profile</a>
-                  </li>
-                  <li class="nav-item active">
-                      <a class="nav-link" href="about.html">About</a>
-                  </li>
-              </ul>
-          </div>
-      </nav>
-  </header>
-
-    <h2>What is Dream Stream</h2>
-    <p>Have you ever found yourself overwhelmed with thoughts or inspired by a moment, wishing you could express your ideas without the pressure of formal grammar? Welcome to Stream of Consciousness, a social media platform designed for those spontaneous bursts of creativity and emotion. Here, you can freely write, vent, or share your thoughts as they flow naturally.</p>
-
-    <p>Stream of Consciousness, you can invite friends to join a collaborative "Dream," where you set unique visibility parameters called "veils" to control what they can see. Prefer to keep your reflections private? Use your personal dream journal to organize your thoughts and ideas for later. Embrace the art of free expression and connect with others in a supportive space that celebrates your inner voice.</p>
-
-    <h2>Why express yourself?</h2>
-    <div>
-        <h3>Write about what bugs you!</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BCAvTWXpWkk?si=yvNu3jQQVdOkOow0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <div>
-        <h3>Research</h3>
-        <div id="quote">
-            <div><em>Expressive writing, due to its appeal as a healing ritual, is likely to build up confidence in one's health and prospects, without taking into account the uncertainties of day-to-day events and circumstances.</em></div>
-            <div>- <a href="https://www.tandfonline.com/doi/abs/10.1080/17437190802660890"> Heath Pychology Review </a></div>
+        <a class="navbar-brand" href="about.html">About</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stream.html">Stream</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
         </div>
-    </div>
+      </nav>
+    </header>
+    
+    <main class="container my-4">
+      <section class="mb-5">
+        <h2 class="text-left">What is Dream Stream</h2>
+        <p class="text-left">Have you ever found yourself overwhelmed with thoughts or inspired by a moment, wishing you could express your ideas without the pressure of formal grammar? Welcome to Stream of Consciousness, a social media platform designed for those spontaneous bursts of creativity and emotion. Here, you can freely write, vent, or share your thoughts as they flow naturally.</p>
+        <p class="text-left">With Stream of Consciousness, you can invite friends to join a collaborative "Dream," where you set unique visibility parameters called "veils" to control what they can see. Prefer to keep your reflections private? Use your personal dream journal to organize your thoughts and ideas for later. Embrace the art of free expression and connect with others in a supportive space that celebrates your inner voice.</p>
+      </section>
 
+      <section class="mb-5">
+        <h2 class="text-left">Why express yourself?</h2>
+        <div class="mb-4">
+          <div class="d-flex justify-content-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BCAvTWXpWkk?si=yvNu3jQQVdOkOow0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-left">Research</h3>
+          <div id="quote" class="p-3 bg-light border rounded">
+            <p><em>Expressive writing, due to its appeal as a healing ritual, is likely to build up confidence in one's health and prospects, without taking into account the uncertainties of day-to-day events and circumstances.</em></p>
+            <p>- <a href="https://www.tandfonline.com/doi/abs/10.1080/17437190802660890" class="text-decoration-none">Heath Psychology Review</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <footer class="fixed-bottom d-flex justify-content-end align-items-center bg-light p-3">
+    <footer class="d-flex justify-content-end align-items-center bg-light p-3">
       <div class="text-end">
         <span class="text-muted">Author Name(s)</span>
         <br />
         <a href="https://github.com/yopst/startup/tree/main" class="text-reset">Luc Cole</a>
       </div>
     </footer>
+
+    <!-- Bootstrap JavaScript (Optional for Bootstrap components like collapse) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
