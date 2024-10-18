@@ -36,7 +36,7 @@ For this deliverable I built out the structure of my application using HTML.
 - [x] **DB/Login** - Input box and submit button for login. The profile information will be authenticated and stored in a database later. (I would like to add support for blocking and restricting profile and stream access in the form of private streams that require a passkey.)
 - [x] **WebSocket** - The count of viewers and comments will be represented with Websocket support.
 
-##CSS DELIVERABLE
+## CSS DELIVERABLE
 
 For this deliverable I styled webpage to be aesthetically pleasing and provide functional organization to make it more user friendly.
 
