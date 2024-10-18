@@ -35,3 +35,15 @@ For this deliverable I built out the structure of my application using HTML.
 - [x] **Video** - There is an embedded Youtube video in the about section.
 - [x] **DB/Login** - Input box and submit button for login. The profile information will be authenticated and stored in a database later. (I would like to add support for blocking and restricting profile and stream access in the form of private streams that require a passkey.)
 - [x] **WebSocket** - The count of viewers and comments will be represented with Websocket support.
+
+##CSS DELIVERABLE
+
+For this deliverable I styled webpage to be aesthetically pleasing and provide functional organization to make it more user friendly.
+
+
+- [x] **Header, footer, and main content body**
+- [x] **Navigation elements** - I used a bootstrap menu that is consistent between pages and collapses
+- [x] **Responsive to window resizing** - I used flex to wrap and organize elements for different screen types
+- [x] **Application elements** - Used bootstrap colors and classes to organize and visually distiguish page sections (I kept the muted white and grey because I think it looks clean)
+- [x] **Application text content** - Consistent fonts, text area on the Stream page size was specified to make it fit the flex section. I think this looks better but I may change it for functionality later.
+- [x] **Application media** - I still have an embedded video on the About page that is centered. And the profile picture was styled with bootstrap to look like an app profile should
