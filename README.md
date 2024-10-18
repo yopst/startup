@@ -47,3 +47,4 @@ For this deliverable I styled webpage to be aesthetically pleasing and provide f
 - [x] **Application elements** - Used bootstrap colors and classes to organize and visually distiguish page sections (I kept the muted white and grey because I think it looks clean)
 - [x] **Application text content** - Consistent fonts, text area on the Stream page size was specified to make it fit the flex section. I think this looks better but I may change it for functionality later.
 - [x] **Application media** - I still have an embedded video on the About page that is centered. And the profile picture was styled with bootstrap to look like an app profile should
+- [x] **Funtionality** - Added a little bit of JS for the control panel sliders and for the homepage content selector
